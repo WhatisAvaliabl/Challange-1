@@ -1,3 +1,4 @@
+/* Normailised Settings */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -9,6 +10,7 @@ body {
     background-color: #d9dcd6;
 }
 
+/* Navigation Buttons */
 nav{
     display: flex;
     padding: 10px;
@@ -18,33 +20,36 @@ nav{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande';
     color: #ffffff;
 }
+
+/* Logo */
 .header h1 {
     display: flex;
     font-size: 48px;
 }
-
+/* Changing the colour of "seo" in the logo */
 .header h1 .seo {
     color: #d9dcd6;
     font-size: 48px;
 }
+
+/* Allowing the links in the "nav" to adjust to different sizes */
 .links {
     flex: 1;
     text-align: right;
     }
-
 .links  ul  li{
     list-style: none;
     display: inline-block;
     padding: 8px;
     position: relative;
 }
-
 .links  ul  li a{
     color: white;
     text-decoration: none;
     font-size: 20px;
 }   
 
+/* Main Large Imagine */
 .hero {
     height: 800px;
     width: 100%;
@@ -54,22 +59,27 @@ nav{
     background-position: center;
 }
 
+/* Images in the body being on the left */
 .float-left {
     float: left;
     margin-right: 25px;
 }
 
+/* Image in the body being on the right */
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
+
+/* The writing inside the main body */
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+/* the writing on the right side of the page */
 .benefits {
     padding: 20px;
     margin-top: 25px;
@@ -82,12 +92,14 @@ nav{
     color: #ffffff;
 }
 
+/* The headings of the conent */
 .benefits h3 {
     font-size: 20px;
     margin-top: 30px;
     text-align: center;
 }
 
+/* The Images on the right side of the page */
 .benefits img {
     display: block;
     margin: 10px auto;
@@ -115,24 +127,29 @@ nav{
     font-size: 36px;
 }
 
+/* The footer of the page */
 .footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
-
 .footer h2 {
     font-size: 20px;
 }
 
+/* Allows th page to form with the changes of screen size when smaller then 768px */
 @media screen and (max-width: 768px) {
+    
+    /* List the nav in a column */
     nav {
         flex-direction: column;
     }
     .links{
         text-align: center;
     }
+
+    /* Allows the images, text and background to adjust to the screen size without looking bad */
     .Body-Header{
         display: flex;
         flex-direction: column;
@@ -140,6 +157,8 @@ nav{
         width: 80%;
         align-items: center;
     }
+
+    /* Moves the information on the right hnd sid to list underneath the body */
     .benefits {
         float: none; 
         align-items: center;
