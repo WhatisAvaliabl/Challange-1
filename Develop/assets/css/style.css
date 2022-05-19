@@ -156,6 +156,7 @@ nav{
         height: 100%;
         width: 80%;
         align-items: center;
+        width: 125%;
     }
 
     /* Moves the information on the right hnd sid to list underneath the body */
